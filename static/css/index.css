@@ -1,0 +1,50 @@
+body{
+  overflow: hidden;
+  background: -webkit-linear-gradient(0deg, transparent 30%, cyan 30%), url("../images/japan1.jpg") no-repeat;
+  background-size: auto 100vh;
+  display: flex;
+  
+}
+
+h1, p{
+  padding-left: .7em;
+  font-size: 5rem;
+  user-select: none;
+  line-height: 1em;
+  text-shadow: -1px 2px white;
+}
+ul{
+  flex-grow: 1;
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  font-family: var(--MPlus1);
+  font-size: 19rem;
+  line-height: 1em;
+  text-align: right;
+  transform: rotate(-21deg) translate(4vw, 7vh);
+}
+a{
+  text-decoration: none;
+  
+}
+a{
+  background: linear-gradient(90deg, rgb(255, 0, 0), #8000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+li:nth-child(2) a{
+  background: linear-gradient(90deg, #ffb300, #38ff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+li:nth-child(3) a{
+  background: linear-gradient(90deg, #00abff, #ff00d7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+li a:hover{
+  background: red;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -44,9 +44,12 @@ table {
 }
 /* html fix stuff */
 
+/* fonts */
+:root{
+	--MPlus1: 'M PLUS 1 Code', sans-serif;
+}
 body{
     background-color: cyan;
-    width: 90%;
     margin: auto;
     font-family: sans-serif;
 }
