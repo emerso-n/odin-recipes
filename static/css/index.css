@@ -3,7 +3,6 @@ body{
   background: -webkit-linear-gradient(0deg, transparent 30%, cyan 30%), url("../images/japan1.jpg") no-repeat;
   background-size: auto 100vh;
   display: flex;
-  
 }
 
 h1, p{
@@ -25,26 +24,25 @@ ul{
   transform: rotate(-21deg) translate(4vw, 7vh);
 }
 a{
-  text-decoration: none;
-  
+  text-decoration: none; 
 }
 a{
-  background: linear-gradient(90deg, rgb(255, 0, 0), #8000ff);
+  background: linear-gradient(90deg, var(--red), var(--purple));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 li:nth-child(2) a{
-  background: linear-gradient(90deg, #ffb300, #38ff00);
+  background: linear-gradient(90deg, var(--orange), var(--green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 li:nth-child(3) a{
-  background: linear-gradient(90deg, #00abff, #ff00d7);
+  background: linear-gradient(90deg, var(--blue), var(--magenta));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 li a:hover{
-  background: red;
+  background: var(--red);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

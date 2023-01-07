@@ -47,10 +47,17 @@ table {
 /* fonts */
 :root{
 	--MPlus1: 'M PLUS 1 Code', sans-serif;
+	--red: red;
+	--orange: #ffb300;
+	--yellow: yellow;
+	--green: #38ff00;
+	--blue: #00abff;
+	--purple: #8000ff;
+	--magenta: magenta;
+	--cyan: cyan;
 }
 body{
-    background-color: cyan;
-    margin: auto;
+    background-color: var(--cyan);
     font-family: sans-serif;
 }
 img{
