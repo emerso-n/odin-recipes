@@ -1,45 +1,48 @@
+body{
+  font-family: sans-serif;
+}
+ol{
+  margin: 0 2rem;
+}
+ul{
+  padding-top: 2rem;
+}
 h1{
   font-family: var(--MPlus1);
   font-size: 18rem;
-  background: linear-gradient(90deg, var(--red), var(--purple));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   top: -40px;
   left: -40px;
   position: fixed;
   line-height: 1em;
   z-index: 1;
 }
-h11:after{
-  content: "こ焼き";
-  position: relative;
-  writing-mode: vertical-lr;
-}
-.jp_1{
-  font-family: var(--MPlus1);
-  font-size: .8em;
-}
+
 #page_con{
   display: flex;
+  height: 100vh;
 }
+
+
 #description_panel{
-  background: url("../images/takoyaki_collage.jpg");
-  background-size: 700px;
   width: 500px;
+  overflow: hidden;
   flex: 1;
-  /*! padding: 10px; */
 }
 #description_panel p{
   writing-mode: vertical-rl;
   color: black;
   font-size: 1.5rem;
 }
+
+
 #instructions_panels{
   background: var(--yellow);
   flex: 2;
   display: flex;
   flex-direction: column;
 }
+
+
 #prep_con{
   height: 0;
 }
@@ -47,7 +50,6 @@ h11:after{
   position: relative;
   top: 250px;
   left: -100px;
-  background: red;
   padding:  20px;
   border-radius: 100%;
   width: 200px;
@@ -62,34 +64,24 @@ h11:after{
 #prep_con b{
   font-family: arial black;
 }
-#components_con, #assembly_con{
-  padding: 15px;
-  column-count: 2;
-}
+
+
 #components_con{
-  background: var(--yellow);
   flex: 1;
   display: flex;
   flex-direction: row-reverse;
-  border: 7px dashed var(--blue);
   margin: 5px;
+  padding: 5px;
 }
 #components{
   padding: 25px 6px;
   display: inline-block;
-  column-count: 1;
   writing-mode: vertical-rl;
   text-orientation: sideways;
 }
 #components ul{
   margin: 0 0.3em 0 .5em;
   font-size: 1.1rem;
-}
-#components p{
-  background: var(--red);
-}
-#assembly p{
-  color: var(--purple);
 }
 #components p, #assembly p{
   font-family: serif;
@@ -98,41 +90,36 @@ h11:after{
 }
 #components_header{
   z-index: 0;
-  float: right;
   font-size: 3rem;
+  text-align: center;
   writing-mode: vertical-rl;
   font-family: arial black;
   transform: scaleX(2);
-  font-weight: bold;
-  text-shadow: -300px 0px red, -350px 0px var(--orange), -400px 0px var(--green), -450px 0px var(--blue), -500px 0px var(--purple);
+}
+
+
+h3{
+  display: none;
 }
 .border{
   background-image: url("../images/assembly_top.png");
   background-size: 265px;
-  background-color: cyan;
 }
 #border-left{
-   background-image: url("../images/assembly_left.png");
+  background-image: url("../images/assembly_left.png");
   background-size: auto 265px;
   background-position: bottom;
 }
 #border-right{
-   background-image: url("../images/assembly_right.png");
+  background-image: url("../images/assembly_right.png");
   background-size: auto 265px;
-}
-#border-left, #border-right{
-  width: 341px;
 }
 #border-bottom{
    background-image: url("../images/assembly_bottom.png");
 }
-#border-bottom, #border-top{
-  height: 50px;
-}
 #assembly_con{
   padding: 0;
-  background: var(--cyan);
-  flex: 1;
+  flex: 1.5;
   display: flex;
   justify-content: space-between;
 }
@@ -143,22 +130,21 @@ h11:after{
 #assembly{
  column-count: 2;
   flex: 1;
-  padding: 2em;
+  padding: 1em 2em;
 }
+
+
 #edge_panel{
-  background: -webkit-linear-gradient(90deg, var(--blue), var(--purple));
   width: 180px;
 }
+
+
 a{
   font-size: 10rem;
   text-decoration: none;
-  color: var(--purple);
   font-weight: bold;
   position: fixed;
   bottom: 0;
   right: -50px;
   transform: rotate(-25deg);
-}
-a:hover{
-  color: var(--red);
 }

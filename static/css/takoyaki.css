@@ -1,0 +1,54 @@
+h1{
+  background: linear-gradient(90deg, var(--red), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+#description_panel{
+  background: url("../images/takoyaki_collage.jpg");
+  background-size: 700px;
+}
+
+
+#prep{
+  background: var(--red);
+}
+
+
+#instructions_panels, #components_con{
+  background: var(--yellow);
+}
+#components_con{
+  border: 5px dashed var(--blue);
+}
+#components{
+  padding: 25px 30px;
+}
+#components p{
+  background: var(--green);
+}
+#components_header{
+  text-shadow: -300px 0px red, -350px 0px var(--orange), -400px 0px var(--green), -450px 0px var(--blue), -500px 0px var(--purple);
+}
+
+
+#assembly_con{
+  background: var(--cyan);
+}
+#border-left, #border-right{
+  width: 350px;
+}
+#border-bottom, #border-top{
+  height: 51px;
+}
+#assembly p, a{
+  color: var(--purple);
+}
+a:hover{
+  color: var(--red);
+}
+
+#edge_panel{
+  background: -webkit-linear-gradient(90deg, var(--blue), var(--purple));
+}

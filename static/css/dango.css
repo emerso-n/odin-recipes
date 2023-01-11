@@ -1,0 +1,55 @@
+h1{
+  top: -30px;
+  left: -20px;
+  background: linear-gradient(90deg, var(--blue), var(--magenta));;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#description_panel{
+    background: url("../images/dango_collage.jpg");
+    background-size: 650px;
+}
+
+#prep{
+    background: var(--blue);
+}
+#instructions_panels, #components_con{
+    background: var(--green);
+}
+#components_con{
+    border: 5px dashed var(--purple);
+}
+#components p{
+  background: var(--orange);
+}
+#components{
+    padding: 25px 20px;
+}
+#components ul{
+    font-size: 1.2rem;
+}
+#components_header{
+    text-shadow: -300px 0px var(--purple), -350px 0px var(--red), -400px 0px var(--orange), -450px 0px var(--yellow), -500px 0px var(--blue);
+}
+
+#assembly_con{
+    background: var(--yellow);
+}
+#border-left, #border-right{
+    width: 190px;
+}
+#border-bottom, #border-top{
+    height: 51px;
+}
+#assembly p, a{
+    color: var(--magenta);
+}
+a:hover{
+    color: var(--green);
+}
+
+#edge_panel{
+    background: -webkit-linear-gradient(90deg, var(--purple), var(--magenta));
+    width: 180px;
+}

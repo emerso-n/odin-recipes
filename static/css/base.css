@@ -12,8 +12,8 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
-	/*! padding: 0; */
-	/*! border: 0; */
+	padding: 0;
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -51,25 +51,15 @@ b{
 :root{
 	--MPlus1: 'M PLUS 1 Code', sans-serif;
 	--red: red;
-	--orange: #ffb300;
+	--orange: #ff8f00;
 	--yellow: yellow;
 	--green: #38ff00;
-	--blue: #00abff;
+	--blue: #0093ff;
 	--purple: #8000ff;
 	--magenta: magenta;
 	--cyan: cyan;
 }
-body{
-    background-color: var(--cyan);
-    font-family: sans-serif;
-}
-img{
-    height: auto;
-    width: 500px;
-}
-h1{
-    font-size: 5rem;
-}
-ol, ul{
-    margin: 0 2rem;
+.jp_1{
+  font-family: var(--MPlus1) !important;
+  font-size: 1.3rem !important;
 }

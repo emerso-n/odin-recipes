@@ -4,8 +4,8 @@ body{
   background-size: auto 100vh;
   display: flex;
 }
-
 h1, p{
+  font-family: sans-serif;
   padding-left: .7em;
   font-size: 5rem;
   user-select: none;
