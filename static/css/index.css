@@ -1,12 +1,13 @@
 body{
   overflow: hidden;
-  background: -webkit-linear-gradient(0deg, transparent 580px, cyan 580px), url("../images/japan1.jpg") no-repeat;
+  background: -webkit-linear-gradient(0deg, transparent 35vw, cyan 35vw), url("../images/japan1.jpg") no-repeat;
   background-size: auto 100vh;
 }
 h1, p{
   font-family: sans-serif;
   padding-left: .7em;
-  font-size: 5rem;
+/*   font-size: 5rem; */
+  font-size: clamp(3rem, 4.5vw, 7rem);
   user-select: none;
   line-height: 1em;
   text-shadow: -1px 2px white;
@@ -14,11 +15,17 @@ h1, p{
 }
 ul{
   position: fixed;
-  top: 25px;
-  right: -50px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  right: -6rem;
   list-style: none;
   font-family: var(--MPlus1);
-  font-size: 19rem;
+/*   font-size: 19rem; */
+  font-size: clamp(10rem, 16vw, 19rem);
   line-height: 1em;
   text-align: right;
   white-space: nowrap;
@@ -26,8 +33,6 @@ ul{
 }
 a{
   text-decoration: none; 
-}
-a{
   background: linear-gradient(90deg, var(--red), var(--purple));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

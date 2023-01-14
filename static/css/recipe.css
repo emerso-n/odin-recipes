@@ -1,17 +1,12 @@
 body{
   font-family: sans-serif;
 }
-ol{
-  margin: 0 2rem;
-}
-ul{
-  padding-top: 2rem;
-}
 h1{
   font-family: var(--MPlus1);
-  font-size: 18rem;
-  top: -40px;
-  left: -40px;
+  /*   font-size: 18rem; */
+  font-size: clamp(12rem, 15vw, 18rem);
+  top: -.15em;
+  left: -.15em;
   position: fixed;
   line-height: 1em;
   z-index: 1;
@@ -20,29 +15,32 @@ h1{
 #page_con{
   display: flex;
   height: 100vh;
+  width: 100vw;
+  min-height: 820px;
+  font-size: clamp(12px, .83vw, 18px);
 }
 
-
+/* description panel */
 #description_panel{
-  width: 500px;
+  flex: 1 1 0; 
   overflow: hidden;
-  flex: 1;
+  writing-mode: vertical-lr;
+  text-align: center;
+  font-size: 1.5em;
 }
 #description_panel p{
-  writing-mode: vertical-rl;
-  color: black;
-  font-size: 1.5rem;
+  transform: rotate(180deg);
 }
 
 
+/* instructions panel */
 #instructions_panels{
-  background: var(--yellow);
-  flex: 2;
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
 }
 
-
+/* prep con */
 #prep_con{
   height: 0;
 }
@@ -50,14 +48,14 @@ h1{
   position: relative;
   top: 250px;
   left: -100px;
-  padding:  20px;
   border-radius: 100%;
-  width: 200px;
-  height: 200px;
+  width: 13em;
+  height: 13em;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 1em;
   line-height: 1.5em;
   z-index: 1;
 }
@@ -65,82 +63,72 @@ h1{
   font-family: arial black;
 }
 
-
+/* components con */
 #components_con{
-  flex: 1;
+  flex: 2;
   display: flex;
-  flex-direction: row-reverse;
-  margin: 5px;
-  padding: 5px;
+  align-items: center;
+  /*! justify-content: flex-end; */
+  border: .4em dashed black;
+  margin: 1em;
+  overflow-x: visible;
 }
-#components{
-  padding: 25px 6px;
-  display: inline-block;
+#components_body{  
+  /*! box-sizing: content-box; */
   writing-mode: vertical-rl;
   text-orientation: sideways;
+  width: 66em;
+  height: 20em;
+  padding: .5em 0;
 }
-#components ul{
+#components{
+  margin: 2em .8em 2em -1em;
+}
+ul{
   margin: 0 0.3em 0 .5em;
-  font-size: 1.1rem;
+  font-size: 1.1em;
+}
+h2, #components-extra{
+  font-size: 5.6em;
+  font-family: arial black;
+  transform: scaleY(.5);
+  transform-origin: 0 0;
+  line-height: .9em;
 }
 #components p, #assembly p{
-  font-family: serif;
-  font-weight: bold;
-  font-size: 1.6em;
-}
-#components_header{
-  z-index: 0;
-  font-size: 3rem;
-  text-align: center;
-  writing-mode: vertical-rl;
-  font-family: arial black;
-  transform: scaleX(2);
+   font-family: serif;
+   font-weight: bold;
+   font-size: 1.6em;
 }
 
-
+/* assembly con */
 h3{
   display: none;
 }
-.border{
-  background-image: url("../images/assembly_top.png");
-  background-size: 265px;
-}
-#border-left{
-  background-image: url("../images/assembly_left.png");
-  background-size: auto 265px;
-  background-position: bottom;
-}
-#border-right{
-  background-image: url("../images/assembly_right.png");
-  background-size: auto 265px;
-}
-#border-bottom{
-   background-image: url("../images/assembly_bottom.png");
-}
 #assembly_con{
-  padding: 0;
-  flex: 1.5;
-  display: flex;
-  justify-content: space-between;
-}
-#assembly_mid{
-  display: flex;
-  flex-direction: column;
-}
-#assembly{
- column-count: 2;
-  flex: 1;
+  flex: 2;
+  column-count: 2;
   padding: 1em 2em;
+  border: 2.6em solid white;
+  border-image-source: url(../images/assembly_border.png);
+  border-image-repeat: repeat;
+  border-image-slice: 140; 
 }
-
-
+ol{
+    margin: 0 2em;
+  }
+ol li{
+  line-height: 1.2em;
+}
+/* edge panel */
 #edge_panel{
-  width: 180px;
+  flex: 0 1 8vw;
 }
 
-
+/* back button */
 a{
-  font-size: 10rem;
+  /*   font-size: 10rem; */
+  font-size: clamp(8rem, 8.5vw, 10rem);
   text-decoration: none;
   font-weight: bold;
   position: fixed;

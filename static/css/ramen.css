@@ -2,42 +2,52 @@ h1{
   background: linear-gradient(90deg, var(--orange), var(--green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 #description_panel{
   background: url("../images/ramen_collage.jpg");
-  background-size: 650px;
+  background-size: 25em;
 }
 
 #prep{
   background: var(--yellow);
 }
+
 #instructions_panels, #components_con{
   background: var(--cyan);
 }
 #components_con{
-  border: 5px dashed var(--blue);
+  border-color: #a349fc;
 }
 #components{
-  padding: 25px 30px;
+  padding: 0 .3em 0 1em;
 }
 #components ul{
-  font-size: 1.3rem;
+  font-size: 1.3em;
 }
-#components_header{
-  text-shadow: -250px 0px var(--blue), -300px 0px var(--purple), -350px 0px var(--red), -400px 0px var(--orange), -450px 0px var(--yellow), -500px 0px var(--green);
+#components-extra{
+  margin-right: 1em;
+}
+#components-extra p:first-child{
+  color: var(--blue);
+}
+#components-extra p:nth-child(2){
+  color: var(--purple);
+}
+#components-extra p:nth-child(3){
+  color: var(--red);
+}
+#components-extra p:nth-child(4){
+  color: var(--orange);
+}
+#components-extra p:last-child{
+  color: var(--yellow);
 }
 
 #assembly_con{
   background: var(--magenta);
 }
-#border-left, #border-right{
-  width: 200px;
-}
-#border-bottom, #border-top{
-  height: 51px;
-}
+
 #assembly p, a{
   color: blue;
 }

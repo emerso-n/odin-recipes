@@ -1,6 +1,6 @@
 h1{
-  top: -30px;
-  left: -20px;
+  top: -.1em;
+  left: -.1em;
   background: linear-gradient(90deg, var(--blue), var(--magenta));;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -8,7 +8,7 @@ h1{
 
 #description_panel{
     background: url("../images/dango_collage.jpg");
-    background-size: 650px;
+    background-size: 26em;
 }
 
 #prep{
@@ -18,29 +18,33 @@ h1{
     background: var(--green);
 }
 #components_con{
-    border: 5px dashed var(--purple);
+    border-color: var(--purple);
 }
 #components p{
   background: var(--orange);
 }
 #components{
-    padding: 25px 20px;
+    padding: 0 .2em 0 .5em;
 }
-#components ul{
-    font-size: 1.2rem;
+#components-extra p:first-child{
+  color: var(--purple);
 }
-#components_header{
-    text-shadow: -300px 0px var(--purple), -350px 0px var(--red), -400px 0px var(--orange), -450px 0px var(--yellow), -500px 0px var(--blue);
+#components-extra p:nth-child(2){
+  color: var(--red);
 }
+#components-extra p:nth-child(3){
+  color: var(--orange);
+}
+#components-extra p:nth-child(4){
+  color: var(--yellow);
+}
+#components-extra p:last-child{
+  color: var(--blue);
+}
+
 
 #assembly_con{
     background: var(--yellow);
-}
-#border-left, #border-right{
-    width: 190px;
-}
-#border-bottom, #border-top{
-    height: 51px;
 }
 #assembly p, a{
     color: var(--magenta);
@@ -51,5 +55,4 @@ a:hover{
 
 #edge_panel{
     background: -webkit-linear-gradient(90deg, var(--purple), var(--magenta));
-    width: 180px;
 }
