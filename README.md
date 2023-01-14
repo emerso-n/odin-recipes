@@ -1,6 +1,6 @@
-# odin-recipes
+# web punk recipe site
 
-we gonna make a recipe website that lets us practice basic html and adding links wow stuff i already know how to do. Learning is fun when its this easy.
+I spent way too much time on this
 
 sources:
 takoyaki info: https://livejapan.com/en/article-a0001178/
@@ -8,7 +8,6 @@ takoyaki recipe: https://www.justonecookbook.com/takoyaki-recipe/
 takoyaki photos: https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Takoyaki_%2829063177354%29.jpg/1280px-Takoyaki_%2829063177354%29.jpg
 https://upload.wikimedia.org/wikipedia/commons/a/a6/TAKOYAKI_03_%2817255269602%29.jpg
 https://upload.wikimedia.org/wikipedia/commons/8/8e/Takoyaki_-_Iku_Yakitori_%2865050648%29.jpg
-
 
 ramen info: https://livejapan.com/en/article-a0000352/
 ramen recipe: https://www.forkknifeswoon.com/simple-homemade-chicken-ramen/
