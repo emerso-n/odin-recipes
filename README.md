@@ -1,5 +1,7 @@
 # web punk recipe site
 
+https://emerso-n.github.io/odin-recipes/
+
 I spent way too much time on this
 
 sources:
