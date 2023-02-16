@@ -1,3 +1,19 @@
+/* fonts */
+:root{
+	--MPlus1: 'M PLUS 1 Code', sans-serif;
+	--red: red;
+	--orange: #ff8f00;
+	--yellow: yellow;
+	--green: #38ff00;
+	--blue: #0093ff;
+	--purple: #8000ff;
+	--magenta: magenta;
+	--cyan: cyan;
+}
+.jp_1{
+  font-family: var(--MPlus1);
+  font-size: 1.3rem;
+}
 body{
   overflow: hidden;
   background: -webkit-linear-gradient(0deg, transparent 35vw, cyan 35vw), url("../images/japan1.jpg") no-repeat;
@@ -5,6 +21,7 @@ body{
 }
 h1, p{
   font-family: sans-serif;
+  margin: 0;
   padding-left: .7em;
 /*   font-size: 5rem; */
   font-size: clamp(3rem, 4.5vw, 7rem);
@@ -51,4 +68,15 @@ li a:hover{
   background: var(--red);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+footer{
+  position: fixed;
+  inset: 0 0 .4em 0;
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px -1px white;
+  font-size: 1em;
+  writing-mode: sideways-lr;
+  width: min-content;
 }
